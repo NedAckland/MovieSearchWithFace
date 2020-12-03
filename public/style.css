@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Major Mono Display", monospace;
+}
+body {
+  background-color: black;
+}
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 100%;
+}
+ul {
+  list-style-type: none;
+  margin-left: 100px;
+  padding: 0;
+}
+img {
+  display: flex;
+  margin: 0 auto;
+}
+li {
+  color: #fff;
+  margin: 25px;
+}
+section {
+  display: grid;
+}
+h1,
+p {
+  color: #fff;
+}
+p {
+  width: 345px;
+  font-family: 'Raleway', sans-serif;
+}
+.movie-info{
+  display: flex;
+  justify-content: space-evenly;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid rgb(119, 119, 119);
+  border-bottom: 16px solid rgb(44, 44, 44);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+aside {
+  background-color: rgb(20, 20, 20);
+  width: 100%;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+}
+aside div {
+  font-size: 34px;
+  color: rgb(175, 175, 175);
+  margin: 0 auto;
+  /* margin-top: 130px; */
+  /* height: 0px; */
+}
+#container {
+  margin: 0px auto;
+  width: 500px;
+  height: 375px;
+  border: 10px #333 solid;
+}
+#videoElement {
+  width: 500px;
+  height: 375px;
+  background-color: rgb(5, 5, 5);
+}
+#video {
+  border: 1px solid black;
+  box-shadow: 2px 2px 3px black;
+  width: 320px;
+  height: 240px;
+  border-radius: 30%;
+}
+
+#photo {
+  border: 1px solid black;
+  box-shadow: 2px 2px 3px black;
+  width: 320px;
+  height: 240px;
+  border-radius: 30%;
+}
+
+#canvas {
+  display: none;
+}
+
+.camera {
+  width: 340px;
+  display: inline-block;
+}
+
+.output {
+  width: 340px;
+  display: inline-block;
+}
+
+
+.contentarea {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.emotion {
+  color: #fff;
+}
+
+.movie-title {
+  margin: 0 auto;
+}

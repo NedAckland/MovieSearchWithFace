@@ -1,0 +1,11 @@
+
+
+/node_modules
+/views/index.html
+/views/awstest.html
+/views/camtest.html
+/public/js/awstest.js
+/public/js/script.js
+/test.js
+/credentials
+/config.env

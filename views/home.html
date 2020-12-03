@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="movie-title"></div>
+            <div class="movie-info">
+                <div class="poster"></div>
+                <div class="overview"></div>
+            </div>
+            <div class="contentarea">
+                <div class="camera">
+                    <video id="video">Video stream not available.</video>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <div>
+                <div class="top-emotion"></div>
+                <div>
+                    <canvas id="canvas"></canvas>
+                    <div class="output">
+                        <img id="photo" alt="The screen capture will appear in this box.">
+                    </div>
+                </div>
+            </div>
+            <div id="loader"></div>
+            <ul class="emotion-output"></ul>
+            <div>
+                <button id="emotion-btn">Generate movie</button>
+            </div>
+            <div></div>
+        </aside>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/webcamController.js"></script>
+</body>
+</html>
